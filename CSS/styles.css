@@ -1,0 +1,97 @@
+/* KLM Plane Art */
+
+body {
+}
+
+.plane {
+    position: absolute;
+    width: 62vw;
+    float: right;
+    right: 0;
+    margin-top: 3em;
+    transition: 1.5s ease-in-out;
+}
+
+.plane:hover {
+    transform: translate(20%, -20%);
+}
+
+.clouds1 {
+    animation: wolkeen 20s linear infinite;
+}
+
+@keyframes wolkeen {
+    0%  {transform: translate(50%, 0); opacity: 0;}
+    100%{transform: translate(-350%, 0); opacity: 1;}
+}
+
+.cloud2 {
+    animation: wolktwee 15s linear infinite;
+}
+
+@keyframes wolktwee {
+    0%  {transform: translate(180%, 0); opacity: 0;}
+    100%{transform: translate(-220%, 0); opacity: 1;}
+}
+
+.clouds3 {
+    animation: wolkdrie 20s linear infinite;
+}
+
+@keyframes wolkdrie {
+    0%  {transform: translate(180%, 0); opacity: 1;}
+    100%{transform: translate(-220%,0); opacity: 0;}
+}
+
+.clouds4 {
+    animation: wolkvier 20s linear infinite;
+}
+
+@keyframes wolkvier {
+    0%  {transform: translate(100%, 0)}
+    100%{transform: translate(-300%,0)}
+}
+
+div>div:nth-of-type(2) {
+    position: absolute;
+    width: 28em;
+    margin-top: 8em;
+    margin-left: 3em;
+    float: left;
+    z-index: -2;
+}
+
+div>div:nth-of-type(3) {
+    position: absolute;
+    width: 10em;
+    margin-top: 30em;
+    margin-left: 15em;
+    float: left;
+}
+
+div>div:nth-of-type(4) {
+    position: absolute;
+    float: right;
+    right: 0;
+    width: 33em;
+    margin-top: 27em;
+    margin-right: 12em;
+    z-index: 3;
+}
+
+div>div:nth-of-type(5) {
+    position: absolute;
+    float: right;
+    right: 0;
+    width: 30em;
+    margin-right: 2em;
+    z-index: -2;
+}
+
+.sky {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    object-fit: cover;
+    z-index: -5;
+}
