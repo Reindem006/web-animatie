@@ -1,6 +1,7 @@
 /* KLM Plane Art */
 
 body {
+    background: #aae7f7;
 }
 
 .plane {
@@ -8,12 +9,45 @@ body {
     width: 62vw;
     float: right;
     right: 0;
-    margin-top: 3em;
+    margin-top: 2.5em;
     transition: 1.5s ease-in-out;
 }
 
 .plane:hover {
     transform: translate(20%, -20%);
+}
+
+.logo {
+    transition: transform 1s ease-in-out;
+    transform-origin: 17.5% 36.75%;
+}
+
+.draaien {
+    transform: rotate(360deg);
+}
+
+.animate {
+    transform: translate(100%,0);
+}
+
+.fly {
+    background: #199ed9;
+    box-shadow: ;
+    border-color: #199ed9;
+    color: white;
+    width: 30vw;
+    height: 6vw;
+    font-weight: 600;
+    font-size: 3vw;
+    margin-top: 15.2em;
+    margin-left: 1em;
+    z-index: 999;
+}
+
+.fly:hover {
+    background: #ffff;
+    border-color: #ffff;
+    color: #199ed9;
 }
 
 .clouds1 {
@@ -54,7 +88,7 @@ body {
 
 div>div:nth-of-type(2) {
     position: absolute;
-    width: 28em;
+    width: 28vw;
     margin-top: 8em;
     margin-left: 3em;
     float: left;
@@ -63,7 +97,7 @@ div>div:nth-of-type(2) {
 
 div>div:nth-of-type(3) {
     position: absolute;
-    width: 10em;
+    width: 10vw;
     margin-top: 30em;
     margin-left: 15em;
     float: left;
@@ -73,7 +107,7 @@ div>div:nth-of-type(4) {
     position: absolute;
     float: right;
     right: 0;
-    width: 33em;
+    width: 33vw;
     margin-top: 27em;
     margin-right: 12em;
     z-index: 3;
@@ -83,7 +117,7 @@ div>div:nth-of-type(5) {
     position: absolute;
     float: right;
     right: 0;
-    width: 30em;
+    width: 30vw;
     margin-right: 2em;
     z-index: -2;
 }
